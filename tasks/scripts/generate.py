@@ -74,7 +74,7 @@ for dirname, dirnames, filenames in os.walk(args.input_dir):
 				glyph = f.createChar(cp)
 			glyph.importOutlines(filePath)
 
-			glyph.left_side_bearing = glyph.right_side_bearing = 0
+			# glyph.left_side_bearing = glyph.right_side_bearing = 0
 			glyph.round()
 
 			files.append(name)
